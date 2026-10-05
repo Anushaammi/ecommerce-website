@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Placed</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Thank you! Your order has been placed.</h1>
+    <p>Order Number: #{{ order.id }}</p>
+    <p>Total: Rs. {{ order.total_amount }}</p>
+    <a href="/">Continue Shopping</a>
+</body>
+</html>
